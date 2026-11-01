@@ -529,4 +529,61 @@ header .navbar-expand-md .navbar-nav .nav-link {
   header .navbar-nav .nav-link:focus-visible {
     border-radius: 0;
   }
+
+  .display {
+    font-size: 56px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  h2{
+    font-size: 32px;
+  }
+
+  h3{
+    font-size: 28px;
+  }
+
+  .hero-foto-col{
+    order: -1;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .hero-foto{
+    width: min(216px, 70vw);
+    height: auto;
+    aspect-ratio: 216/322;
+    object-fit: cover;
+  }
+
+  .hero-testo-col{
+    order: 1;
+    padding-top: 16px;
+  }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .btn-primarybtn, .btn-secondarybtn{
+    display: block;
+    width: fit-content;
+    margin: 0 0 16px 0;
+  }
+
+  .banda{
+    height: 48;
+    padding: 5px 0;
+    margin-top: 24px;
+  }
+
+  .banda-voce{
+    font-size: 28px;
+  }
 }
