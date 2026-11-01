@@ -427,4 +427,39 @@ body {
   to {
     transform: translateY(-50%) translateX(0);
   }
+}
+header .navbar-expand-md .navbar-nav .nav-link {
+  padding: 12px 24px;
+}
+
+@media (max-width: 767.98px) {
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    clip-path: none;
+    background-color: #FBF6F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: 8px 16px;
+  }
+  .logo {
+    width: 56px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FBF6F9;
+  }
+  .navbar-nav {
+    position: static;
+    transform: none;
+    animation: none;
+    width: 100%;
+    flex-direction: column;
+    border: none;
+    border-radius: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
