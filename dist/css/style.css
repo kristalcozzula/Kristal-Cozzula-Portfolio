@@ -438,13 +438,38 @@ header .navbar-expand-md .navbar-nav .nav-link {
     top: 0;
     left: 0;
     clip-path: none;
+    height: 83px;
+    padding: 0 16px 0 0;
     background-color: #FBF6F9;
     display: flex;
     justify-content: space-between;
-    align-items: 8px 16px;
+    align-items: center;
   }
   .logo {
-    width: 56px;
+    height: 68px;
+    width: auto;
+    margin-left: 8px;
+  }
+  .navbar-toggler {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler:focus-visible {
+    outline: 2px solid #591D4F;
+    outline-offset: 2px;
+  }
+  .navbar-toggler-icon {
+    width: 48px;
+    height: 48px;
+    background-image: url(../../assets/img/icona-hamburger.svg);
+  }
+  .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+    background-image: url("../../assets/img/icona-close.svg");
   }
   .navbar-collapse {
     position: absolute;
@@ -460,6 +485,15 @@ header .navbar-expand-md .navbar-nav .nav-link {
     width: 100%;
     flex-direction: column;
     border: none;
+    border-left: 1px solid #DDB938;
+    border-radius: 0;
+  }
+  header .navbar-expand-md .navbar-nav .nav-link {
+    padding: 24px;
+    line-height: 19px;
+    text-align: center;
+  }
+  header .navbar-nav .nav-link:focus-visible {
     border-radius: 0;
   }
 }/*# sourceMappingURL=style.css.map */
