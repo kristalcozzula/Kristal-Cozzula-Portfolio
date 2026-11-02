@@ -1,0 +1,122 @@
+$primarycolor1: #591D4F;
+$primarycolor2: #A67B8A;
+$primarycolor3: #CCA1BC;
+$accentcolor: #DDB938;
+$backgroundcolor: #FBF6F9;
+$textcolor: #2B1026;
+$font-primario: 'Montserrat', sans-serif;
+$font-secondario: 'Lora', serif;
+* {
+  box-sizing: border-box;
+}
+
+.sezione-about{
+  margin-top: 204px;
+  margin-bottom: 64px;
+  .row{
+    --bs-gutter-x: 32px;
+  }
+
+  .foto-about{
+    width: 100%;
+    height: 488px;
+    object-fit: cover;
+  }
+
+  .testo-about h1 {
+    max-width: 480px;
+    margin-bottom: 24px;
+  }
+}
+
+.sezione-i-miei-valori{
+  margin-top: 64px;
+  .box-valori{
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    border: solid 5px $primarycolor3;
+    border-radius: 24px;
+    background-color: $primarycolor2;
+  }
+
+  .contenuto-box-valori{
+    width: 100%;
+    padding: 24px 48px;
+    border-radius: 24px;
+    background-color: $backgroundcolor;
+    h2{
+      margin-bottom: 48px;
+      text-align: left;
+    }
+
+    .row{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(2, auto);
+      column-gap: 150px;
+      row-gap: 24px;
+      margin: 0;
+
+      > div {
+        width: auto;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.sezione-i-miei-interessi {
+  margin-top: 64px;
+  .griglia-immagini{
+    display: grid;
+    grid-template-columns: repeat(3, 175px);
+    gap: 12px;
+
+    img{
+      width: 175px;
+      height: 175px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .griglia-immagini img:nth-child(2) {
+  object-position: center 30%;
+}
+
+  .griglia-immagini img:last-child{
+    object-position: center 20%;
+  }
+
+  .testo-interessi{
+    h2{
+      padding-bottom: 32px;
+      text-align: left;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 64px;
+    border-left: 2px solid $accentcolor;
+    height: 100%;
+  }
+}
+
+.sezione-filosofia{
+  margin-top: 64px;
+  text-align: center;
+
+  h2{
+    margin-bottom: 24px;
+  }
+
+  .lista-about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 12px;
+  }
+}

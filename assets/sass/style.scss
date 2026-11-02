@@ -332,7 +332,6 @@ body {
 
 .sezione-skill {
   margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 .blocco-skill {
@@ -376,6 +375,7 @@ body {
 
 
 .footer {
+  margin-top: 80px;
   background-color: $primarycolor1;
   padding: 80px 0 40px;
 
@@ -660,7 +660,6 @@ header .navbar-expand-md .navbar-nav .nav-link {
 
   .sezione-skill {
     margin-top: 24px;
-    margin-bottom: 48px;
 
     .row {
       row-gap: 24px;
@@ -676,6 +675,7 @@ header .navbar-expand-md .navbar-nav .nav-link {
   }
 
   .footer {
+    margin-top: 48px;
     padding: 24px;
 
     .container {
