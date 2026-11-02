@@ -62,6 +62,7 @@
   display: grid;
   grid-template-columns: repeat(3, 175px);
   gap: 12px;
+  justify-content: center;
 }
 .sezione-i-miei-interessi .griglia-immagini img {
   width: 175px;
@@ -107,4 +108,129 @@
   width: fit-content;
   margin: 0 auto;
   gap: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .sezione-about {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .sezione-about .row {
+    position: relative;
+  }
+  .sezione-about .foto-about {
+    width: calc(100% + 64px);
+    height: auto;
+    margin-left: -32px;
+    display: block;
+    margin-bottom: 24px;
+    filter: brightness(65%);
+  }
+  .sezione-about .testo-about h1 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    max-width: 75%;
+    margin: 0;
+    color: #FBF6F9;
+    text-align: left;
+    line-height: 50px;
+  }
+  .sezione-i-miei-valori {
+    margin-top: 0;
+  }
+  .sezione-i-miei-valori .box-valori {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  .sezione-i-miei-valori .contenuto-box-valori {
+    padding: 0;
+    background: none;
+  }
+  .sezione-i-miei-valori .contenuto-box-valori .row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .sezione-i-miei-valori .contenuto-box-valori h2 {
+    margin-bottom: 32px;
+  }
+  .sezione-i-miei-interessi {
+    margin-top: 48px;
+  }
+  .sezione-i-miei-interessi .griglia-immagini {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
+    width: calc(100% + 64px);
+    margin-left: -32px;
+    order: 2;
+  }
+  .sezione-i-miei-interessi .griglia-immagini img {
+    flex: 0 0 175px;
+    scroll-snap-align: center;
+  }
+  .sezione-i-miei-interessi .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .sezione-i-miei-interessi .row > .col-md-6 {
+    display: contents;
+  }
+  .sezione-i-miei-interessi .testo-interessi {
+    display: contents;
+  }
+  .sezione-i-miei-interessi .testo-interessi h2 {
+    order: 1;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  .sezione-i-miei-interessi .testo-interessi p {
+    order: 3;
+  }
+  .sezione-filosofia {
+    margin-top: 48px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .sezione-filosofia h2 {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .sezione-about .row {
+    align-items: stretch;
+  }
+  .sezione-about .row > div:first-child {
+    display: flex;
+  }
+  .sezione-about .foto-about {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 90% center;
+       object-position: 90% center;
+  }
+  .sezione-i-miei-interessi .row > .col-md-6:first-child {
+    display: flex;
+    align-items: center;
+  }
+  .sezione-i-miei-interessi .griglia-immagini {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .sezione-i-miei-interessi .griglia-immagini img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=about.css.map */
