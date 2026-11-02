@@ -76,12 +76,14 @@ header {
   border: solid 5px $primarycolor3;
   border-top: none;
   border-radius: 0 0 999px 999px;
+  width: 100%;
   max-width: 520px;
 }
 
 .hero-foto-col {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .banda {
@@ -578,12 +580,205 @@ header .navbar-expand-md .navbar-nav .nav-link {
   }
 
   .banda{
-    height: 48;
+    height: 48px;
     padding: 5px 0;
     margin-top: 24px;
   }
 
   .banda-voce{
     font-size: 28px;
+    line-height: 1;
+  }
+
+  .come-lavoro{
+    margin-top: 24px;
+  }
+
+  .come-lavoro .row {
+    row-gap: 24px;
+  }
+
+  .card-lavoro {
+    width: 100%;
+    max-width: 328px;
+    height: 340px;
+    aspect-ratio: auto;
+    padding: 48px 16px 16px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .card-content {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 16px 12px;
+  }
+
+  .numero {
+    top: 16px;
+    left: 12px;
+    font-size: 56px;
+    line-height: 62px;
+  }
+
+  .testo-card {
+    left: 12px;
+    right: 12px;
+    bottom: 16px;
+  }
+
+  .illustrazione-come-lavoro-fumetto,
+  .illustrazione-come-lavoro-lampadina,
+  .illustrazione-come-lavoro-successo {
+    right: 32px;
+    top: 64px;
+    left: auto;
+    transform: none;
+  }
+
+  .esempio {
+    margin-top: 24px;
+    row-gap: 24px;
+
+    > div:first-child {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .sezione-skill {
+    margin-top: 24px;
+    margin-bottom: 48px;
+
+    .row {
+      row-gap: 24px;
+    }
+  }
+
+  .blocco-skill {
+    padding-right: 0;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .footer {
+    padding: 24px;
+
+    .container {
+      padding: 0;
+      gap: 24px;
+    }
+
+    .row {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .messaggio {
+      font-size: 24px;
+    }
+
+    .social {
+      width: 156px;
+      justify-content: center;
+      gap: 24px;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+/* Tablet: 768px - 1199.98px */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .display {
+    font-size: 56px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .banda-voce {
+    font-size: 28px;
+  }
+  .footer h4 {
+    font-size: 20px;
+  }
+  .footer .messaggio {
+    font-size: 24px;
+  }
+
+  header {
+    left: 40px;
+  }
+
+  .hero-foto-col {
+    padding-top: 120px;
+    justify-content: flex-start;
+  }
+
+  .come-lavoro .row{
+    --bs-gutter-x: 16px;
+  }
+
+  .card-lavoro{
+    width: 100%;
+    max-width: 328px;
+    height: 340px;
+    aspect-ratio: auto;
+    padding: 48px 12px 12px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-inline: auto;
+  }
+
+  .card-content{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 16px 12px;
+  }
+
+  .numero{
+    top: 8px;
+    left: 12px;
+    font-size: 56px;
+  }
+
+  .testo-card{
+    h3{
+    margin-bottom: 12px;
+    }
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .illustrazione-come-lavoro-fumetto, .illustrazione-come-lavoro-lampadina, .illustrazione-come-lavoro-successo{
+    top: 64px;
+    right: 24px;
+    left: auto;
   }
 }
