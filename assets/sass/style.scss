@@ -288,14 +288,14 @@ body {
   position: absolute;
   width: 27%;
   left: 63%;
-  top: 27%;
+  top: clamp(110px, calc(3.125vw + 72.5px), 117.5px);
   z-index: 2;
 }
 .illustrazione-come-lavoro-lampadina {
   position: absolute;
   width: 20%;
   left: 70%;
-  top: 25%;
+  top: clamp(104px, calc(3.125vw + 66.5px), 111.5px);
   z-index: 2;
 }
 
@@ -303,7 +303,7 @@ body {
   position: absolute;
   width: 20%;
   left: 70%;
-  top: 27%;
+  top: clamp(110px, calc(3.125vw + 72.5px), 117.5px);
   z-index: 2;
 }
 
@@ -598,6 +598,11 @@ header .navbar-expand-md .navbar-nav .nav-link {
     row-gap: 24px;
   }
 
+  .come-lavoro .row > div {
+    display: flex;
+    justify-content: center;
+  }
+
   .card-lavoro {
     width: 100%;
     max-width: 328px;
@@ -780,5 +785,13 @@ header .navbar-expand-md .navbar-nav .nav-link {
     top: 64px;
     right: 24px;
     left: auto;
+  }
+
+  .blocco-skill{
+    padding-right: 24px;
+  }
+
+  .blocco-tool{
+    padding: 48px 12px;
   }
 }
