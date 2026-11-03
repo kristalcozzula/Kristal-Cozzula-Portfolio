@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .sezione-about {
   margin-top: 204px;
   margin-bottom: 64px;
@@ -171,6 +167,7 @@
     width: calc(100% + 64px);
     margin-left: -32px;
     order: 2;
+    margin-bottom: 12px;
   }
   .sezione-i-miei-interessi .griglia-immagini img {
     flex: 0 0 175px;
