@@ -380,6 +380,13 @@ body {
   justify-content: flex-end;
   gap: 64px;
 }
+.footer .social a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.footer .social a:hover {
+  transform: scale(1.1);
+}
 .footer h4 {
   color: #A67B8A;
   margin-bottom: 48px;

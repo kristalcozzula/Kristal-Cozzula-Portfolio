@@ -395,6 +395,16 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 64px;
+  
+  a {
+   display: inline-block;
+   transition: transform 0.3s ease;
+
+   &:hover {
+    transform: scale(1.1);
+   }
+  }
+
  }
 
  h4 {
