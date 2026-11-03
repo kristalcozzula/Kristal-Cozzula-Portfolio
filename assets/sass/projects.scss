@@ -1,0 +1,89 @@
+$primarycolor1: #591D4F;
+$primarycolor2: #A67B8A;
+$primarycolor3: #CCA1BC;
+$accentcolor: #DDB938;
+$backgroundcolor: #FBF6F9;
+$textcolor: #2B1026;
+$font-primario: 'Montserrat', sans-serif;
+$font-secondario: 'Lora', serif;
+
+.progetti {
+  width: 100%;
+  margin-top: 204px;
+
+  h1{
+    text-align: center;
+  }
+
+  .progetti-principali{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    max-width: 1200px;
+    margin: 64px auto;
+  }
+
+  .progetto-principale{
+    display: block;
+    overflow: hidden;
+    border-radius: clamp(4px, 2vw, 24px);
+  }
+
+   img{
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+
+  .altri-progetti{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin: 64px 24px;
+
+    .progetto-secondario{
+      display: block;
+      overflow: hidden;
+      border-radius: clamp(4px, 1vw, 24px);
+
+      img{
+        width: 100%;
+        display: block;
+        transition: transform 0.4s ease;
+      }
+
+      &:hover{
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+@media(max-width: 767.98px){
+  .progetti{
+    margin-top: 32px;
+
+  .progetti-principali, .altri-progetti{
+    grid-template-columns: 1fr;
+    margin: 24px;
+    
+    img{
+      border-radius: 24px;
+    }
+  }
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .progetti{
+    .progetti-principali, .altri-progetti{
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+}
