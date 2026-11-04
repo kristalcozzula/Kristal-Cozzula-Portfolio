@@ -230,4 +230,7 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .sezione-i-miei-valori .contenuto-box-valori .row {
+    gap: 48px;
+  }
 }/*# sourceMappingURL=about.css.map */

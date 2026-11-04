@@ -380,6 +380,14 @@ body {
   background-color: $primarycolor1;
   padding: 80px 0 40px;
 
+  .footer-text{
+  font-family: $font-primario;
+  font-size: 24px;
+  font-weight: 600;
+  color: $primarycolor2;
+  margin-bottom: 48px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -406,11 +414,6 @@ body {
    }
   }
 
- }
-
- h4 {
-  color: $primarycolor2;
-  margin-bottom: 48px;
  }
 
  .messaggio {
@@ -699,7 +702,7 @@ header .navbar-expand-md .navbar-nav .nav-link {
       gap: 24px;
     }
 
-    h4 {
+    .footer-text {
       font-size: 20px;
       margin-bottom: 12px;
     }
@@ -738,7 +741,7 @@ header .navbar-expand-md .navbar-nav .nav-link {
   .banda-voce {
     font-size: 28px;
   }
-  .footer h4 {
+  .footer ,.footer-text {
     font-size: 20px;
   }
   .footer .messaggio {
@@ -823,10 +826,6 @@ header .navbar-expand-md .navbar-nav .nav-link {
     row-gap: 48px;
   }
 
-  .blocco-skill{
-    padding-right: 24px;
-  }
-
   .blocco-tool{
     padding: 48px 12px;
   }
@@ -890,5 +889,14 @@ header .navbar-expand-md .navbar-nav .nav-link {
   .blocco-tool{
     padding: 48px 12px;
   }
+}
 
+@media (prefers-reduced-motion: reduce) {
+  .banda-scorrimento {
+    animation: none;
+  }
+
+  .navbar-nav {
+    animation: none;
+  }
 }

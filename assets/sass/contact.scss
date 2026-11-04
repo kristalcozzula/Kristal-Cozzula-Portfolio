@@ -55,6 +55,10 @@ $font-secondario: 'Lora', serif;
     flex-direction: column;
     gap: 24px;
   }
+
+  button{
+    width: 100%;
+  }
 }
 
 .campo-form{
@@ -65,7 +69,6 @@ $font-secondario: 'Lora', serif;
   input, textarea{
     width: 100%;
     padding: 12px 24px;
-    align-items: flex-start;
     border: 1px solid $textcolor;
     border-radius: 12px;
     background-color: $backgroundcolor;
@@ -86,13 +89,8 @@ $font-secondario: 'Lora', serif;
   }
 }
 
-  .contatti-form button{
-    width: 100%;
 
-  }
-
-
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
   .pagina-contatti{
     padding: 0 24px;
@@ -112,9 +110,8 @@ $font-secondario: 'Lora', serif;
 
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .pagina-contatti{
-    margin-top: 32px;
     padding: 0 24px;
   }
 
@@ -125,7 +122,6 @@ $font-secondario: 'Lora', serif;
 
   .contatti-info{
     align-items: center;
-    text-align: left;
   }
 
   .illustrazione-contatti{
@@ -138,5 +134,10 @@ $font-secondario: 'Lora', serif;
     padding: 24px;
     margin: 0 auto;
   }
+}
 
+@media (max-width: 767.98px) {
+  .pagina-contatti{
+    margin-top: 32px;
+  }
 }

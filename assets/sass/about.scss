@@ -267,6 +267,14 @@ $font-secondario: 'Lora', serif;
       object-fit: cover;
     }
   }
+ }
+
+ .sezione-i-miei-valori{
+  .contenuto-box-valori{
+    .row{
+      gap: 48px;
+    }
+  }
+ }
 }
 
-}
