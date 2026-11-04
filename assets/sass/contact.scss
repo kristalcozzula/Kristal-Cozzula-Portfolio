@@ -1,0 +1,142 @@
+$primarycolor1: #591D4F;
+$primarycolor2: #A67B8A;
+$primarycolor3: #CCA1BC;
+$accentcolor: #DDB938;
+$backgroundcolor: #FBF6F9;
+$textcolor: #2B1026;
+$font-primario: 'Montserrat', sans-serif;
+$font-secondario: 'Lora', serif;
+
+.pagina-contatti{
+  margin-top: 204px;
+  padding: 0 32px;
+}
+
+.contatti-layout{
+  max-width: 1200px;
+  margin: 0 auto 120px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.contatti-info{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  h1{
+    margin: 0;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.illustrazione-contatti{
+  width: 100%;
+  max-width: 450px;
+  margin-top: 24px;
+}
+
+.contatti-form{
+  padding: 48px 64px;
+  background-color: rgba(204, 161, 188, 0.15);
+  border: 3px solid $primarycolor1;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.campo-form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  input, textarea{
+    width: 100%;
+    padding: 12px 24px;
+    align-items: flex-start;
+    border: 1px solid $textcolor;
+    border-radius: 12px;
+    background-color: $backgroundcolor;
+
+    &:focus-visible{
+      outline: none;
+      border-color: $accentcolor;
+    }
+  }
+
+  textarea{
+    resize: vertical;
+    min-height: 180px;
+  }
+
+  input::placeholder, textarea::placeholder{
+    color: #9D919B;
+  }
+}
+
+  .contatti-form button{
+    width: 100%;
+
+  }
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+  .pagina-contatti{
+    padding: 0 24px;
+  }
+
+  .contatti-layout{
+    gap: 40px;
+  }
+
+  .contatti-form{
+    padding: 32px;
+  }
+
+  .illustrazione-contatti{
+    max-width: 350px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .pagina-contatti{
+    margin-top: 32px;
+    padding: 0 24px;
+  }
+
+  .contatti-layout{
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .contatti-info{
+    align-items: center;
+    text-align: left;
+  }
+
+  .illustrazione-contatti{
+    display: none;
+  }
+
+  .contatti-form{
+    max-width: 500px;
+    width: 100%;
+    padding: 24px;
+    margin: 0 auto;
+  }
+
+}

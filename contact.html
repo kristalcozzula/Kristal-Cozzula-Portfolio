@@ -9,44 +9,66 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/css/style.css">
-  <link rel="stylesheet" href="dist/css/about.css">
+  <link rel="stylesheet" href="dist/css/contact.css">
 
-  <title>Contattami | Kristal Cozzula UX-UI Designer</title>
-  <meta property="og:title" content="Contattami | Kristal Cozzula UX-UI Designer" />
-  <meta name="description" content="Hai un progetto in mente o un'idea da sviluppare? Contattami per parlare di siti web, identità visive e interfacce digitali progettate con attenzione alle persone.">
-  <meta property="og:description" content="Raccontami la tua idea, che sia un sito web, un logo o un'identità visiva. Possiamo confrontarci senza impegno e trovare insieme la soluzione più adatta al tuo progetto." />
+  <title>Su di me | Kristal Cozzula UX-UI Designer</title>
+  <meta property="og:title" content="Su di me | Kristal Cozzula UX-UI Designer" />
+  <meta name="description" content="Scopri chi sono, il mio percorso nel mondo del design, cosa mi appassiona e cosa mi guida come UX-UI designer.">
+  <meta property="og:description" content="Scopri il mio percorso, le mie passioni e il mio approccio al design." />
   <meta property="og:image" content="" />
   <meta property="og:url" content="" />
   <meta property="og:type" content="website" />
 </head>
 
+<body>
+  <header>
+  <img src="assets/img/personallogomenu.svg" class="logo" alt="Kristal Cozzula">
+  <nav class="navbar navbar-expand-md">
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#menu-principale"
+      aria-controls="menu-principale" aria-expanded="false" aria-label="Apri il menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu-principale">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link label">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link label" aria-current="page">Su di me</a></li>
+        <li class="nav-item"><a href="curriculum.html" class="nav-link label">Curriculum</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link label">I miei progetti</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link label">Contattami</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
 <main class="pagina-contatti">
   <section class="contatti-layout">
     <div class="contatti-info">
-      <h1>Una chiacchiera?</h1>
+      <h1 class="display">Una chiacchiera?</h1>
       <p>Hai un progetto in mente, o anche solo un'idea ancora da mettere a fuoco? Raccontamelo in due righe: che si tratti di un sito, di un logo o di un'identità visiva, ne parliamo insieme in una chiacchierata senza impegno. E se ti va soltanto di parlare di design, scrivimi lo stesso!</p>
       <img src="assets/img/message.svg" alt="illustrazione" class="illustrazione-contatti">
     </div>
 
     <div class="contatti-form">
-      <form action="#" method="post">
+      <form action="#" method="post" id="contact-form">
 
         <div class="campo-form">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" required>
+        <label for="nome" class="label">Nome</label>
+        <input type="text" name="from_name" id="nome" placeholder="Nome" required>
         </div>
 
         <div class="campo-form">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required>
+        <label for="email" class="label">E-mail</label>
+        <input type="email" name="from_email" id="email" placeholder="E-mail" required>
         </div>
 
         <div class="campo-form">
-          <label for="messaggio">Messaggio</label>
-          <textarea name="messaggio" id="messaggio" rows="6" required></textarea>
+          <label for="messaggio" class="label">Messaggio</label>
+          <textarea name="message" id="messaggio" rows="6" placeholder="Scrivimi un messaggio" required></textarea>
         </div>
         
-        <button type="submit">Invia il messaggio</button>
+        <button type="submit" class="btn-secondarybtn label">Invia il messaggio</button>
       </form>
     </div>
   </section>
@@ -81,3 +103,10 @@
       </div>
     </div>
   </footer>
+ 
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
