@@ -124,6 +124,13 @@ h3 {
         gap: 8px;
         a{
           color: $textcolor;
+          text-decoration: none;
+          display: inline-block;
+          transition: transform 0.3s ease;
+
+          &:hover{
+            transform: scale(1.05);
+          }
         }
       }
     }
@@ -162,6 +169,7 @@ h3 {
     }
   }
 }
+
 
 @media(max-width:767.98px){
   .pagina-curriculum{
@@ -206,8 +214,28 @@ h3 {
       .skill{
         gap: 24px;
       }
-
     }
   }
+}
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer{
+    margin-top: 8px;
+  }
+
+  .pagina-curriculum{
+    .colonna-curriculum-destra{
+    gap: 80px;
+
+    h2{
+      margin-bottom: 24px;
+    }
+
+    .griglia-tool{
+      margin-top: 48px;
+      row-gap: 32px;
+      column-gap: 16px;
+    }
+  }
+ }
 }
