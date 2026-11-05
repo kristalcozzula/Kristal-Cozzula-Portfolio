@@ -94,7 +94,7 @@
     padding: 0 24px;
   }
   .contatti-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 48px;
   }
   .contatti-info {
@@ -113,5 +113,12 @@
 @media (max-width: 767.98px) {
   .pagina-contatti {
     margin-top: 32px;
+  }
+  .pagina-contatti h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #591D4F;
   }
 }/*# sourceMappingURL=contact.css.map */

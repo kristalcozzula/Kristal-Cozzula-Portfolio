@@ -116,7 +116,7 @@ $font-secondario: 'Lora', serif;
   }
 
   .contatti-layout{
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 48px;
   }
 
@@ -139,5 +139,13 @@ $font-secondario: 'Lora', serif;
 @media (max-width: 767.98px) {
   .pagina-contatti{
     margin-top: 32px;
+
+    h1{
+      font-family: $font-primario;
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 48px;
+      color: $primarycolor1;
+    }
   }
 }
