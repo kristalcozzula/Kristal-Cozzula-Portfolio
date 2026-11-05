@@ -125,7 +125,7 @@
   .sezione-about .testo-about h1 {
     position: absolute;
     top: 12px;
-    left: 12px;
+    left: 0;
     z-index: 2;
     max-width: 75%;
     margin: 0;
@@ -164,8 +164,8 @@
     justify-content: flex-start;
     scroll-snap-type: x mandatory;
     padding-bottom: 12px;
-    width: calc(100% + 64px);
-    margin-left: -32px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
     order: 2;
     margin-bottom: 12px;
   }
@@ -182,6 +182,10 @@
   }
   .sezione-i-miei-interessi .testo-interessi {
     display: contents;
+  }
+  .sezione-i-miei-interessi .testo-interessi p {
+    order: 3;
+    padding: 0 24px;
   }
   .sezione-i-miei-interessi .testo-interessi h2 {
     order: 1;
