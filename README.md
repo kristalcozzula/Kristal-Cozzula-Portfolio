@@ -2,7 +2,8 @@
 Progetto per il  corso di HTML e CSS per Start2Impact. Creazione di un portfolio in HTML e CSS.
 Presenta chi sono, il mio curriculum, i progetti di web design e logo design e un modulo per contattarmi.
 
-**Sito online:** [LINK DEL SITO PUBBLICATO]
+**Sito online:**
+https://kristalcozzula.github.io/Kristal-Cozzula-Portfolio/index.html
 
 ## Pagine
 
