@@ -114,11 +114,12 @@
   .pagina-contatti {
     margin-top: 32px;
   }
-  .pagina-contatti h1 {
+  .pagina-contatti .contatti-info h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 48px;
     color: #591D4F;
+    margin-bottom: 24px;
   }
 }/*# sourceMappingURL=contact.css.map */

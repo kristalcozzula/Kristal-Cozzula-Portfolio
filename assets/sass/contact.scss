@@ -139,13 +139,15 @@ $font-secondario: 'Lora', serif;
 @media (max-width: 767.98px) {
   .pagina-contatti{
     margin-top: 32px;
-
-    h1{
+    .contatti-info{
+       h1{
       font-family: $font-primario;
       font-size: 48px;
       font-weight: 700;
       margin-bottom: 48px;
       color: $primarycolor1;
+      margin-bottom: 24px;
+    }
     }
   }
 }
