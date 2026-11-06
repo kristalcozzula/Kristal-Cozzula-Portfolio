@@ -157,6 +157,8 @@ h3 {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 12px;
+    scrollbar-color: #CCA1BC #CCA1BC;
+    scrollbar-width: auto;
   }
   .pagina-curriculum .colonna-curriculum-destra .griglia-tool .tool {
     flex: 0 0 auto;

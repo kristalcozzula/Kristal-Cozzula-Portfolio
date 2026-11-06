@@ -168,6 +168,8 @@
     margin-left: -20px;
     order: 2;
     margin-bottom: 12px;
+    scrollbar-color: #CCA1BC #CCA1BC;
+    scrollbar-width: auto;
   }
   .sezione-i-miei-interessi .griglia-immagini img {
     flex: 0 0 175px;

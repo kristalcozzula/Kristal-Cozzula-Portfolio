@@ -188,6 +188,8 @@ $font-secondario: 'Lora', serif;
     margin-left: -20px;
     order: 2;
     margin-bottom: 12px;
+    scrollbar-color: $primarycolor3 $primarycolor3;
+    scrollbar-width: auto;
 
     img {
       flex: 0 0 175px;

@@ -198,6 +198,8 @@ h3 {
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       padding-bottom: 12px;
+      scrollbar-color: $primarycolor3 $primarycolor3;
+      scrollbar-width: auto;
 
       .tool{
         flex: 0 0 auto;
